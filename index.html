@@ -1,242 +1,179 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#14243A">
-  <meta name="description" content="Dwinovia — personal portfolio, educational apps, and digital learning projects.">
-  <title>Dwinovia | Learn. Create. Innovate.</title>
-  <style>
-    :root {
-      --navy: #14243a;
-      --blue: #24486a;
-      --gold: #f5bd4f;
-      --paper: #f6f8fb;
-      --ink: #182538;
-      --muted: #68778b;
-      --line: #e1e7ef;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--ink);
-      background: var(--paper);
-      line-height: 1.6;
-    }
-    a { color: inherit; text-decoration: none; }
-    .wrap { width: min(1080px, 90%); margin: auto; }
-    header {
-      background: var(--navy);
-      color: white;
-      padding: 20px 0;
-    }
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    .brand { font-weight: 800; letter-spacing: 2px; font-size: 22px; }
-    .brand span { color: var(--gold); }
-    .navlinks { display: flex; gap: 24px; font-size: 14px; }
-    .hero {
-      background: var(--navy);
-      color: white;
-      padding: 86px 0 100px;
-    }
-    .eyebrow {
-      color: var(--gold);
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-    h1 {
-      max-width: 720px;
-      margin: 18px 0;
-      font-size: clamp(40px, 7vw, 68px);
-      line-height: 1.08;
-      letter-spacing: -2px;
-    }
-    .hero p {
-      max-width: 610px;
-      color: #d3dce8;
-      font-size: 17px;
-    }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
-    .btn {
-      display: inline-block;
-      padding: 13px 20px;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 14px;
-    }
-    .primary { background: var(--gold); color: var(--navy); }
-    .secondary { border: 1px solid #728198; color: white; }
-    section { padding: 66px 0; }
-    .section-head { margin-bottom: 28px; }
-    .section-head h2 { font-size: 30px; margin: 5px 0; }
-    .section-head p { color: var(--muted); margin: 0; }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-    .card {
-      padding: 25px;
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-    }
-    .card .symbol { font-size: 28px; }
-    .card h3 { margin: 13px 0 8px; }
-    .card p { color: var(--muted); font-size: 14px; }
-    .tag {
-      display: inline-block;
-      background: #fff3d7;
-      color: #775411;
-      border-radius: 5px;
-      padding: 4px 8px;
-      font-size: 11px;
-      font-weight: bold;
-    }
-    .about {
-      background: white;
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-    }
-    .about-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-    .about h2 { font-size: 32px; line-height: 1.2; }
-    .about p { color: var(--muted); }
-    .note {
-      padding: 25px;
-      border-radius: 12px;
-      background: var(--paper);
-      border-left: 4px solid var(--gold);
-    }
-    footer { background: var(--navy); color: white; padding: 28px 0; }
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-      font-size: 13px;
-      color: #d3dce8;
-    }
-    @media (max-width: 700px) {
-      .navlinks { gap: 12px; font-size: 12px; }
-      .cards { grid-template-columns: 1fr; }
-      .about-inner { grid-template-columns: 1fr; }
-      .hero { padding: 65px 0 75px; }
-      h1 { letter-spacing: -1px; }
-    }
-  </style>
+  <meta name="theme-color" content="#182338">
+  <meta name="description" content="DEE Projects adalah rumah bagi media pembelajaran, teaching resources, dan aplikasi digital.">
+  <title>DEE Projects — Ideas into Meaningful Creations</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav class="wrap">
-      <a class="brand" href="#">DWINOVIA<span>.</span></a>
-      <div class="navlinks">
-        <a href="#about">Tentang</a>
-        <a href="#apps">Aplikasi</a>
-        <a href="#contact">Kontak</a>
+  <header class="site-header">
+    <div class="nav-wrap container">
+      <a class="brand" href="#beranda" aria-label="DEE Projects, beranda">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/dee-monogram.png" alt="">
+        </span>
+        <span class="brand-name">DEE <b>Projects</b></span>
+      </a>
+      <button class="menu-toggle" aria-label="Buka navigasi" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a class="nav-link active" href="#beranda">Beranda</a>
+        <a class="nav-link" href="#proyek">Projek</a>
+        <a class="nav-link" href="#tentang">Tentang</a>
+        <a class="nav-link" href="#kontak">Kontak</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="search-button" aria-label="Cari projek" id="search-open">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5"></circle><path d="m16 16 4.2 4.2"></path></svg>
+        </button>
+        <a class="button button-primary nav-cta" href="https://media.dwinovia.my.id/">Media Pembelajaran <span>→</span></a>
       </div>
-    </nav>
+    </div>
+    <div class="search-panel" id="search-panel" hidden>
+      <div class="container search-inner">
+        <label for="project-search">Cari projek</label>
+        <input id="project-search" type="search" placeholder="Ketik nama projek atau kategori…">
+        <button id="search-close" aria-label="Tutup pencarian">×</button>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="wrap">
-        <div class="eyebrow">Personal Portfolio & Digital Learning</div>
-        <h1>Learn.<br>Create.<br><span style="color:#f5bd4f">Innovate.</span></h1>
-        <p>
-          Ruang personal untuk berbagi karya, mengembangkan ide,
-          dan menghadirkan pengalaman belajar melalui teknologi.
-        </p>
-        <div class="actions">
-          <a class="btn primary" href="#apps">Jelajahi Aplikasi ↗</a>
-          <a class="btn secondary" href="#about">Kenali Dwinovia</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="apps">
-      <div class="wrap">
-        <div class="section-head">
-          <div class="eyebrow">Digital Projects</div>
-          <h2>Explore My Applications</h2>
-          <p>Berbagai media dan aplikasi untuk mendukung proses belajar.</p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <div class="symbol">📚</div>
-            <span class="tag">LANGUAGE</span>
-            <h3>English Learning</h3>
-            <p>Latihan vocabulary, grammar, reading, dan keterampilan bahasa Inggris.</p>
-          </article>
-          <article class="card">
-            <div class="symbol">🎮</div>
-            <span class="tag">INTERACTIVE</span>
-            <h3>Learning Games</h3>
-            <p>Game edukasi untuk menghadirkan pembelajaran yang lebih menarik.</p>
-          </article>
-          <article class="card">
-            <div class="symbol">📝</div>
-            <span class="tag">ASSESSMENT</span>
-            <h3>Assessment Tools</h3>
-            <p>Media latihan, kuis, dan asesmen digital untuk kegiatan belajar.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="wrap about-inner">
-        <div>
-          <div class="eyebrow">About This Space</div>
-          <h2>Ideas become useful digital experiences.</h2>
-        </div>
-        <div>
-          <p>
-            Dwinovia adalah ruang personal untuk mendokumentasikan
-            portofolio, karya pendidikan, eksperimen teknologi, dan
-            aplikasi digital yang dikembangkan secara mandiri.
-          </p>
-          <div class="note">
-            <strong>Learn. Create. Innovate.</strong><br>
-            Belajar, berkarya, dan terus berinovasi.
+    <section class="hero" id="beranda">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">DIGITAL PROJECTS &amp; CREATIVE WORKS</p>
+          <h1>Ideas into<br><span>Meaningful Creations.</span></h1>
+          <p class="hero-description">DEE Projects adalah rumah bagi berbagai projek digital yang menggabungkan pembelajaran, kreativitas, dan teknologi.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyek">Jelajahi Projek <span>→</span></a>
+            <a class="button button-outline" href="#tentang">Tentang DEE Projects</a>
+          </div>
+          <div class="hero-highlights">
+            <div class="highlight"><span class="highlight-icon sparkle">✧</span><span>Media<br>Pembelajaran</span></div>
+            <div class="highlight"><span class="highlight-icon"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21Z"/><path d="M4 5.5V21M8 7h8M8 11h8"/></svg></span><span>Teaching<br>Resources</span></div>
+            <div class="highlight"><span class="highlight-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><span>Aplikasi &amp;<br>Projek Digital</span></div>
           </div>
         </div>
+
+        <div class="hero-art reveal reveal-delay-2" aria-label="Ilustrasi projek digital">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="dot-grid dots-a">••••<br>••••<br>••••</div>
+          <div class="browser-window float-slow">
+            <div class="browser-top"><span></span><span></span><span></span><i></i></div>
+            <div class="browser-scene">
+              <div class="scene-sun"></div><div class="scene-mountain mountain-one"></div><div class="scene-mountain mountain-two"></div>
+              <div class="scene-ground"></div><div class="scene-tree tree-one"></div><div class="scene-tree tree-two"></div>
+              <div class="scene-title">Interactive Learning</div>
+              <div class="scene-option">✓ &nbsp; Explore</div><div class="scene-option">✓ &nbsp; Discover</div><div class="scene-option">○ &nbsp; Create</div>
+            </div>
+            <div class="browser-footer"><span></span><span></span><span></span></div>
+          </div>
+          <div class="floating-card learning-card float-reverse">
+            <div class="mini-logo"><svg viewBox="0 0 48 48"><path d="M24 3 43 13 24 23 5 13Z"/><path d="M5 20 24 30 43 20v6L24 36 5 26Z"/><path d="M5 30 24 40 43 30v6L24 46 5 36Z"/></svg></div>
+            <h3>Interaktif<br>Menyenangkan<br>Bermakna</h3>
+            <p>Media pembelajaran untuk pengalaman belajar yang lebih baik.</p>
+            <span class="play-button">▶</span>
+          </div>
+          <div class="floating-card worksheet-card float-slow"><div class="worksheet-image"><span>🌳</span><span>🌱</span><span>🌲</span></div><b>Worksheet</b><i></i><i></i><i></i></div>
+          <div class="floating-card apps-card float-reverse"><span class="code-icon">&lt;/&gt;</span><b>Aplikasi Web</b><i></i><i></i></div>
+          <div class="floating-card idea-card float-slow"><span class="bulb">✦</span><b>Projek Kreatif</b><i></i><i></i></div>
+          <div class="dot-grid dots-b">••••<br>••••<br>••••</div>
+        </div>
       </div>
     </section>
 
-    <section id="contact">
-      <div class="wrap">
-        <div class="section-head">
-          <div class="eyebrow">Get in Touch</div>
-          <h2>Let's connect.</h2>
-          <p>Informasi kontak dan tautan karya akan ditambahkan di sini.</p>
+    <section class="ecosystem section-pad" id="ekosistem">
+      <div class="container">
+        <div class="ecosystem-heading reveal">
+          <p class="eyebrow">WHAT WE CREATE</p>
+          <h2>Berawal dari Ide, Menjadi Karya.</h2>
+          <p>Berbagai karya digital yang menggabungkan pembelajaran, kreativitas, dan teknologi.</p>
         </div>
+        <div class="ecosystem-grid">
+        <article class="ecosystem-card media-card reveal" data-search="dee media media pembelajaran game interaktif">
+          <div class="ecosystem-icon"><svg viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z" fill="currentColor" stroke="none"/></svg></div>
+          <h2>DEE Media</h2>
+          <p>Game dan media pembelajaran interaktif untuk pengalaman belajar yang menyenangkan.</p>
+          <a href="https://media.dwinovia.my.id/" class="text-link">Buka Media <span>→</span></a>
+        </article>
+        <article class="ecosystem-card resources-card reveal reveal-delay-1" data-search="dee resources worksheet modul bahan ajar teaching resources">
+          <div class="ecosystem-icon"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21Z"/><path d="M4 5.5V21M8 7h8M8 11h8"/></svg></div>
+          <h2>DEE Resources</h2>
+          <p>Worksheet, modul, dan bahan ajar siap pakai untuk guru dan peserta didik.</p>
+          <a href="#proyek" class="text-link">Lihat Resources <span>→</span></a>
+        </article>
+        <article class="ecosystem-card apps-card-ecosystem reveal reveal-delay-2" data-search="dee apps aplikasi web alat bantu digital">
+          <div class="ecosystem-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+          <h2>DEE Apps</h2>
+          <p>Aplikasi web dan alat bantu digital untuk mendukung pembelajaran dan produktivitas.</p>
+          <a href="#proyek" class="text-link">Jelajahi Apps <span>→</span></a>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section section-pad" id="proyek">
+      <div class="container projects-layout">
+        <div class="projects-main">
+          <div class="section-heading reveal">
+            <div><p class="eyebrow">UPDATE TERBARU</p><h2>Projek Terbaru</h2><p>Beberapa projek terbaru yang sedang dikembangkan.</p></div>
+            <a href="https://media.dwinovia.my.id/" class="text-link all-projects">Lihat Semua Projek <span>→</span></a>
+          </div>
+          <div class="project-grid" id="project-grid">
+            <a class="project-card reveal" href="https://media.dwinovia.my.id/" data-search="rantai makanan ekosistem media interaktif">
+              <div class="project-thumb thumb-food"><span class="sun"></span><span class="hills"></span><span class="tree-shape">♣</span><span class="water"></span><span class="thumb-label">Rantai Makanan</span></div>
+              <div class="project-info"><h3>Rantai Makanan</h3><p>Media Interaktif</p><span class="project-arrow">↗</span></div>
+            </a>
+            <a class="project-card reveal reveal-delay-1" href="https://media.dwinovia.my.id/" data-search="sistem tata surya planet media interaktif">
+              <div class="project-thumb thumb-space"><span class="planet planet-a"></span><span class="planet planet-b"></span><span class="planet planet-c"></span><span class="space-stars">✦ · ˚ ✧ ·</span><span class="thumb-label">Sistem Tata Surya</span></div>
+              <div class="project-info"><h3>Sistem Tata Surya</h3><p>Media Interaktif</p><span class="project-arrow">↗</span></div>
+            </a>
+            <a class="project-card reveal reveal-delay-2" href="https://media.dwinovia.my.id/" data-search="latihan matematika numerasi media interaktif">
+              <div class="project-thumb thumb-math"><span class="number n-one">2</span><span class="number n-two">3</span><span class="number n-three">3</span><span class="thumb-label">Latihan Matematika</span></div>
+              <div class="project-info"><h3>Latihan Matematika</h3><p>Media Interaktif</p><span class="project-arrow">↗</span></div>
+            </a>
+            <a class="project-card reveal reveal-delay-3" href="https://media.dwinovia.my.id/" data-search="kenali indonesia peta geografi media interaktif">
+              <div class="project-thumb thumb-map"><span class="map-shape">⌁</span><span class="landmark">▥</span><span class="thumb-label">Kenali Indonesia</span></div>
+              <div class="project-info"><h3>Kenali Indonesia</h3><p>Media Interaktif</p><span class="project-arrow">↗</span></div>
+            </a>
+          </div>
+          <p class="project-note">Kartu projek di atas merupakan contoh tampilan katalog dan dapat diganti dengan produk aktif yang sebenarnya.</p>
+        </div>
+        <aside class="about-card reveal" id="tentang">
+          <p class="about-kicker"><span>✦</span> TENTANG DEE PROJECTS</p>
+          <h2>Karya Digital<br>untuk Dampak yang Lebih Luas</h2>
+          <p>DEE Projects dibangun untuk menghadirkan projek digital yang bermanfaat, mulai dari media pembelajaran, bahan ajar, aplikasi, hingga eksperimen kreatif.</p>
+          <a href="#kontak" class="button button-outline">Pelajari Lebih Lanjut <span>→</span></a>
+          <div class="about-decoration"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="contact-strip" id="kontak">
+      <div class="container contact-inner reveal">
+        <div><p class="eyebrow">PUNYA IDE MENARIK?</p><h2>Mari wujudkan ide menjadi karya digital.</h2><p>DEE Projects terus berkembang melalui eksperimen, kreativitas, dan teknologi.</p></div>
+        <a class="button button-primary" href="mailto:hello@dwinovia.my.id">Hubungi Kami <span>→</span></a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footer-inner">
-      <span>© <span id="year"></span> Dwinovia. All rights reserved.</span>
-      <span>Learn. Create. Innovate.</span>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#beranda"><span class="brand-mark"><img src="assets/dee-monogram.png" alt=""></span><span class="brand-name">DEE <b>Projects</b></span></a>
+      <p>Ideas into Meaningful Creations.</p>
+      <span class="copyright">© <span id="year"></span> DEE Projects. All rights reserved.</span>
     </div>
   </footer>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+
+  <div class="toast" id="no-results" role="status" hidden>Tidak ada projek yang cocok dengan pencarian.</div>
+  <script src="script.js"></script>
 </body>
 </html>
