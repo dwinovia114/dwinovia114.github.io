@@ -3,7 +3,7 @@
 Video edukasi 2D motion graphic (9:16, 1080×1920, 30 fps, ±2:46) untuk @alkindi.islamicschool.
 Hasil akhir: `makharijul-huruf-ep01.mp4`.
 
-Semua gambar digambar dengan kode (canvas) dan musik disintesis dengan kode; voice-over dari ElevenLabs (suara "Abu Aisyah", model eleven_v4), dipotong per kalimat dengan `tools-el-split.py`.
+Semua gambar digambar dengan kode (canvas) dan efek suara disintesis dengan kode (tanpa musik latar); voice-over dari ElevenLabs (suara "Abu Aisyah", model eleven_v4), dipotong per kalimat dengan `tools-el-split.py`.
 
 | file | isi |
 |---|---|

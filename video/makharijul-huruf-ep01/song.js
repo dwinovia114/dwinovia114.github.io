@@ -17,6 +17,9 @@ for (const v of VO) {
   b.mixInto(voice, 1);
 }
 
+// Background music is off (voice-over + SFX only). MUSIC=1 node song.js brings it back.
+const WITH_MUSIC = process.env.MUSIC === '1';
+if (WITH_MUSIC) {
 // ---------- pads: warm, slow ----------
 for (const c of sc.chords) {
   if (c.t0 >= DURATION) continue;
@@ -41,6 +44,8 @@ clock.eachStep(0, Math.ceil(DURATION / (BEAT * 4)), 8, (t, b, st) => {
 for (const c of sc.chords) {
   if (c.t0 >= DURATION - 1) continue;
   bass.addMono(I.bass(c.bass + 12, BEAT * 3.2, { bright: 0.15, sub: 0.9 }), c.t0, 0.32);
+}
+
 }
 
 // ---------- SFX tied to the picture ----------
@@ -86,12 +91,11 @@ whoosh(ev.s6out + 0.3, 0.8, 0.16);
 chime(ev.title7 + 0.2, m('F5'), 0.15); chime(ev.logo7 + 0.3, m('C6'), 0.16); chime(ev.done7, m('F6'), 0.14);
 
 // ---------- mix ----------
-const music = [pad, keys, bass, dly];
-MIX.duck([pad, keys, bass], voice, { depth: 0.55, attack: 0.03, release: 0.6, threshold: 0.03 });
+if (WITH_MUSIC) MIX.duck([pad, keys, bass], voice, { depth: 0.55, attack: 0.03, release: 0.6, threshold: 0.03 });
 const stems = {
-  voice, pad, keys, bass, fx,
+  voice, fx,
   verb: reverb(verb, { room: 0.8, damp: 0.35 }),
-  dly: pingpong(dly, BEAT * 0.75, 0.3, 3000),
+  ...(WITH_MUSIC ? { pad, keys, bass, dly: pingpong(dly, BEAT * 0.75, 0.3, 3000) } : {}),
 };
 const GAIN = { voice: 1.7, pad: 1.4, keys: 0.55, bass: 0.35, fx: 0.7, verb: 0.8, dly: 0.5 };
 const out = path.join(__dirname, 'out');
@@ -101,4 +105,3 @@ MIX.fadeOut(mix, DURATION - 2.2, DURATION);
 const M = MIX.master(mix, parseFloat(process.env.DRIVE || '0.8'), undefined, { lufs: process.env.LUFS ? parseFloat(process.env.LUFS) : -14 });
 MIX.writeWav(path.join(out, 'music.wav'), mix);
 console.log(`wrote out/music.wav (${DURATION.toFixed(2)}s${M.lufs !== undefined ? `, ${M.lufs.toFixed(1)} LUFS at drive ${M.drive.toFixed(2)}` : ''})`);
-void music;
