@@ -58,55 +58,55 @@
 "id": "c1",
 "text": "Makharijul Huruf adalah tempat keluarnya bunyi huruf hijaiyah ketika diucapkan.",
 "file": "assets/vo/c1.wav",
-"dur": 5.463
+"dur": 5.793
 },
 {
 "id": "c2",
 "text": "Kata makharij berarti tempat-tempat keluar, sedangkan makhraj berarti satu tempat keluarnya huruf.",
 "file": "assets/vo/c2.wav",
-"dur": 6.408
+"dur": 8.611
 },
 {
 "id": "c3",
 "text": "Dengan memahami makhraj, kita dapat membedakan pengucapan huruf-huruf yang memiliki bunyi hampir serupa.",
 "file": "assets/vo/c3.wav",
-"dur": 7.039
+"dur": 6.962
 },
 {
 "id": "d0",
 "text": "Secara umum, tempat keluarnya huruf hijaiyah dibagi menjadi lima makhraj utama.",
 "file": "assets/vo/d0.wav",
-"dur": 5.592
+"dur": 6.256
 },
 {
 "id": "d1",
 "text": "Pertama, Al-Jauf, yaitu rongga mulut.",
 "file": "assets/vo/d1.wav",
-"dur": 2.777
+"dur": 4.739
 },
 {
 "id": "d2",
 "text": "Kedua, Al-Halq, yaitu tenggorokan.",
 "file": "assets/vo/d2.wav",
-"dur": 2.784
+"dur": 4.612
 },
 {
 "id": "d3",
 "text": "Ketiga, Al-Lisan, yaitu lidah.",
 "file": "assets/vo/d3.wav",
-"dur": 2.314
+"dur": 4.52
 },
 {
 "id": "d4",
 "text": "Keempat, Asy-Syafatain, yaitu dua bibir.",
 "file": "assets/vo/d4.wav",
-"dur": 3.307
+"dur": 4.752
 },
 {
 "id": "d5",
 "text": "Dan kelima, Al-Khaisyum, yaitu rongga hidung.",
 "file": "assets/vo/d5.wav",
-"dur": 3.276
+"dur": 4.287
 },
 {
 "id": "e1",
@@ -148,13 +148,13 @@
 "id": "g1",
 "text": "Yuk, pelajari makharijul huruf bersama.",
 "file": "assets/vo/g1.wav",
-"dur": 2.881
+"dur": 3.053
 },
 {
 "id": "g2",
 "text": "Karena setiap huruf memiliki tempat keluarnya.",
 "file": "assets/vo/g2.wav",
-"dur": 3.592
+"dur": 3.537
 }
 ];
 if (typeof module!=='undefined') module.exports=VO_LINES; else globalThis.VO_LINES=VO_LINES;})();

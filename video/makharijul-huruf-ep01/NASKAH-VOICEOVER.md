@@ -10,7 +10,7 @@
 
 ---
 
-## Scene 01 — Opening Hook (00:03–00:23)
+## Scene 01 — Opening Hook (00:04–00:26)
 
 | File | Teks | Arahan | Maks |
 |---|---|---|---|
@@ -21,7 +21,7 @@
 | a4 | Namun, keduanya menghasilkan bunyi yang berbeda. | Penekanan pada "berbeda" | 3,8 dtk |
 | a5 | Mengapa demikian? | Bertanya, beri jeda setelahnya | 2,0 dtk |
 
-## Scene 02 — Mengapa Makhraj Penting? (00:23–00:48)
+## Scene 02 — Mengapa Makhraj Penting? (00:26–00:51)
 
 | File | Teks | Arahan | Maks |
 |---|---|---|---|
@@ -29,7 +29,7 @@
 | b2 | Kita juga perlu mengetahui dari mana setiap huruf berasal, dan bagaimana cara mengucapkannya. | Mengalir | 8,0 dtk |
 | b3 | Inilah alasan mengapa kita perlu mempelajari Makharijul Huruf. | Penekanan pada "Makharijul Huruf" | 6,0 dtk |
 
-## Scene 03 — Apa itu Makharijul Huruf? (00:48–01:13)
+## Scene 03 — Apa itu Makharijul Huruf? (00:51–01:18)
 
 | File | Teks | Arahan | Maks |
 |---|---|---|---|
@@ -37,7 +37,7 @@
 | c2 | Kata makharij berarti tempat-tempat keluar, sedangkan makhraj berarti satu tempat keluarnya huruf. | Bedakan "makharij" dan "makhraj" | 7,4 dtk |
 | c3 | Dengan memahami makhraj, kita dapat membedakan pengucapan huruf-huruf yang memiliki bunyi hampir serupa. | Menyimpulkan | 8,5 dtk |
 
-## Scene 04 — Lima Tempat Utama (01:13–01:53)
+## Scene 04 — Lima Tempat Utama (01:18–01:58)
 
 | File | Teks | Arahan | Maks |
 |---|---|---|---|
@@ -48,7 +48,7 @@
 | d4 | Keempat, Asy-Syafatain, yaitu dua bibir. | idem | 5,5 dtk |
 | d5 | Dan kelima, Al-Khaisyum, yaitu rongga hidung. | Nada penutup daftar | 7,0 dtk |
 
-## Scene 05 — Dari 5 Menjadi 17 (01:53–02:13)
+## Scene 05 — Dari 5 Menjadi 17 (01:58–02:20)
 
 | File | Teks | Arahan | Maks |
 |---|---|---|---|
@@ -57,14 +57,14 @@
 | e3 | Dalam pembahasan ilmu tajwid yang umum dipelajari, terdapat tujuh belas makhraj khusus, | Penekanan "tujuh belas" | 6,4 dtk |
 | e4 | yang menjadi tempat keluarnya dua puluh sembilan huruf hijaiyah. | Lanjutan kalimat e3 | 5,0 dtk |
 
-## Scene 06 — Teaser Episode Berikutnya (02:13–02:28)
+## Scene 06 — Teaser Episode Berikutnya (02:20–02:36)
 
 | File | Teks | Arahan | Maks |
 |---|---|---|---|
 | f1 | Pada episode berikutnya, kita akan mulai menjelajahi makhraj pertama, yaitu Al-Jauf. | Membangun rasa penasaran | 6,9 dtk |
 | f2 | Kita akan mengenal huruf-huruf mad, dan bagaimana bunyinya dihasilkan dari rongga mulut. | | 6,5 dtk |
 
-## Scene 07 — Closing (02:28–02:38)
+## Scene 07 — Closing (02:36–02:46)
 
 | File | Teks | Arahan | Maks |
 |---|---|---|---|

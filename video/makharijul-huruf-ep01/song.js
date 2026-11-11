@@ -93,7 +93,7 @@ const stems = {
   verb: reverb(verb, { room: 0.8, damp: 0.35 }),
   dly: pingpong(dly, BEAT * 0.75, 0.3, 3000),
 };
-const GAIN = { voice: 1.0, pad: 1.4, keys: 0.55, bass: 0.35, fx: 0.7, verb: 0.8, dly: 0.5 };
+const GAIN = { voice: 1.7, pad: 1.4, keys: 0.55, bass: 0.35, fx: 0.7, verb: 0.8, dly: 0.5 };
 const out = path.join(__dirname, 'out');
 const mix = MIX.mixdown(stems, GAIN, { stemDir: process.env.STEMS ? out : null });
 MIX.highpass(mix, 30);
