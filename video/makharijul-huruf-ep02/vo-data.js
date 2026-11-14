@@ -52,19 +52,19 @@
 "id": "c1",
 "text": "Al-Jauf artinya rongga, yaitu ruang kosong di dalam mulut dan tenggorokan.",
 "file": "assets/vo/c1.wav",
-"dur": 5.212
+"dur": 6.414
 },
 {
 "id": "c2",
 "text": "Huruf yang keluar dari Al-Jauf tidak memiliki titik sentuh yang pasti.",
 "file": "assets/vo/c2.wav",
-"dur": 4.608
+"dur": 5.692
 },
 {
 "id": "c3",
 "text": "Suaranya mengalir bersama udara, dan berhenti ketika suara berhenti.",
 "file": "assets/vo/c3.wav",
-"dur": 4.757
+"dur": 5.124
 },
 {
 "id": "d0",
