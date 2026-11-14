@@ -9,7 +9,7 @@
 
 **B. Rekam sendiri:** rekam satu file per baris dan beri nama sesuai kolom **File** (misalnya `c1.wav`). Panjang scene akan menyesuaikan rekaman secara otomatis.
 
-Status: scene **1, 2, dan 6** sudah dibuat di ElevenLabs. Scene **3, 4, 5, 7, dan 8** masih menunggu.
+Status: scene **1, 2, 5, 6, 7, dan 8** sudah dibuat di ElevenLabs. Scene **3 dan 4** masih menunggu.
 
 ---
 

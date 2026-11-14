@@ -94,13 +94,13 @@
 "id": "e1",
 "text": "Ketiga huruf mad ini berkumpul dalam satu kata: nūḥīhā.",
 "file": "assets/vo/e1.wav",
-"dur": 4.809
+"dur": 5.52
 },
 {
 "id": "e2",
 "text": "Masing-masing dibaca panjang, dua harakat.",
 "file": "assets/vo/e2.wav",
-"dur": 3.002
+"dur": 3.268
 },
 {
 "id": "f1",
@@ -124,25 +124,25 @@
 "id": "g1",
 "text": "Pada episode berikutnya, kita akan membahas makhraj kedua, yaitu Al-Halq.",
 "file": "assets/vo/g1.wav",
-"dur": 5.558
+"dur": 6.13
 },
 {
 "id": "g2",
 "text": "Kita akan mengenal enam huruf yang keluar dari tenggorokan.",
 "file": "assets/vo/g2.wav",
-"dur": 4.068
+"dur": 3.908
 },
 {
 "id": "h1",
 "text": "Yuk, terus belajar makharijul huruf bersama.",
 "file": "assets/vo/h1.wav",
-"dur": 3.226
+"dur": 3.311
 },
 {
 "id": "h2",
 "text": "Kenali hurufnya, benarkan bacaannya.",
 "file": "assets/vo/h2.wav",
-"dur": 2.989
+"dur": 3.226
 }
 ];
 if (typeof module!=='undefined') module.exports=VO_LINES; else globalThis.VO_LINES=VO_LINES;})();
