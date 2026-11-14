@@ -502,7 +502,7 @@
 
   // ---------- SCENE 4: the three mad letters ----------
   const MAD = [
-    { ch: 'ا', name: 'ALIF SUKUN', rule: 'didahului fathah', mark: 'ـَ', word: 'قَالَ', lat: 'qāla' },
+    { ch: 'ا', name: 'ALIF', rule: 'didahului fathah', mark: 'ـَ', word: 'قَالَ', lat: 'qāla' },
     { ch: 'وْ', name: 'WAU SUKUN', rule: 'didahului dhammah', mark: 'ـُ', word: 'يَقُولُ', lat: 'yaqūlu' },
     { ch: 'يْ', name: 'YA SUKUN', rule: 'didahului kasrah', mark: 'ـِ', word: 'قِيلَ', lat: 'qīla' },
   ];
@@ -552,6 +552,12 @@
     const a = win(t, SC.s5[0] - 0.2, ev.s5out + 0.8, 0.5, 0.8);
     if (a <= 0) return;
     ctx.save(); ctx.globalAlpha = a;
+    const hd = ease.outCubic(P(t, vo.e1.at - 0.2, 0.5));
+    text(ctx, 'SATU KATA', 540, 300 + (1 - hd) * 20, { size: 54, weight: 800, alpha: hd, ls: 4 });
+    text(ctx, 'tiga huruf mad sekaligus', 540, 355 + (1 - hd) * 20, { size: 30, weight: 500, color: REG.jauf.color, alpha: hd });
+    // placeholder dots until the word lands
+    const pre = hd * (1 - P(t, ev.word5 - 0.1, 0.2));
+    for (let i = 0; i < 3; i++) glowDot(ctx, 540 + (i - 1) * 90, 520, 14 + 6 * Math.max(0, Math.sin(t * 5 - i)), REG.jauf.color, pre);
     const w = ease.outBack(P(t, ev.word5, 0.6), 1.8);
     if (w > 0) {
       glowDot(ctx, 540, 520, 150 * w, REG.jauf.color, 0.35, false);

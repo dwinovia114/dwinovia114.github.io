@@ -70,25 +70,25 @@
 "id": "d0",
 "text": "Dari Al-Jauf, keluar tiga huruf mad.",
 "file": "assets/vo/d0.wav",
-"dur": 2.764
+"dur": 3.764
 },
 {
 "id": "d1",
-"text": "Pertama, alif sukun yang didahului huruf berharakat fathah. Contohnya, qāla.",
+"text": "Pertama, alif yang didahului huruf berharakat fathah. Contohnya, qāla.",
 "file": "assets/vo/d1.wav",
-"dur": 5.797
+"dur": 7.933
 },
 {
 "id": "d2",
 "text": "Kedua, wau sukun yang didahului huruf berharakat dhammah. Contohnya, yaqūlu.",
 "file": "assets/vo/d2.wav",
-"dur": 5.845
+"dur": 8.275
 },
 {
 "id": "d3",
 "text": "Ketiga, ya sukun yang didahului huruf berharakat kasrah. Contohnya, qīla.",
 "file": "assets/vo/d3.wav",
-"dur": 5.309
+"dur": 7.35
 },
 {
 "id": "e1",

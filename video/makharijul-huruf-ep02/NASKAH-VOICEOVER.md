@@ -9,7 +9,7 @@
 
 **B. Rekam sendiri:** rekam satu file per baris dan beri nama sesuai kolom **File** (misalnya `c1.wav`). Panjang scene akan menyesuaikan rekaman secara otomatis.
 
-Status: semua scene kecuali **scene 4** sudah dibuat di ElevenLabs.
+Status: semua scene sudah dibuat di ElevenLabs (scene 4 dibuat sendiri, dengan "alif" tanpa "sukun").
 
 ---
 
@@ -55,12 +55,12 @@ Status: semua scene kecuali **scene 4** sudah dibuat di ElevenLabs.
 
 **Teks ElevenLabs:**
 ```
-[warmly] Dari Al-Jauf, keluar tiga huruf mad. [long pause] Pertama, alif sukun yang didahului huruf berharakat fathah. Contohnya, qaala. [long pause] Kedua, wau sukun yang didahului huruf berharakat dhammah. Contohnya, yaquulu. [long pause] Ketiga, ya sukun yang didahului huruf berharakat kasrah. Contohnya, qiila.
+[warmly] Dari Al-Jauf, keluar tiga huruf mad. [long pause] Pertama, alif yang didahului huruf berharakat fathah. Contohnya, qaala. [long pause] Kedua, wau sukun yang didahului huruf berharakat dhammah. Contohnya, yaquulu. [long pause] Ketiga, ya sukun yang didahului huruf berharakat kasrah. Contohnya, qiila.
 ```
 | File | Teks |
 |---|---|
 | d0 | Dari Al-Jauf, keluar tiga huruf mad. |
-| d1 | Pertama, alif sukun yang didahului huruf berharakat fathah. Contohnya, qāla (قَالَ). |
+| d1 | Pertama, alif yang didahului huruf berharakat fathah. Contohnya, qāla (قَالَ). |
 | d2 | Kedua, wau sukun yang didahului huruf berharakat dhammah. Contohnya, yaqūlu (يَقُولُ). |
 | d3 | Ketiga, ya sukun yang didahului huruf berharakat kasrah. Contohnya, qīla (قِيلَ). |
 
@@ -114,6 +114,6 @@ Status: semua scene kecuali **scene 4** sudah dibuat di ElevenLabs.
 ## Catatan materi (mohon diperiksa guru tajwid)
 
 - Al-Jauf adalah rongga mulut dan tenggorokan. Huruf mad tidak memiliki titik makhraj yang pasti (*makhraj muqaddar*); bunyinya berakhir ketika suara berhenti.
-- Huruf mad: alif sukun didahului fathah (قَالَ), wau sukun didahului dhammah (يَقُولُ), ya sukun didahului kasrah (قِيلَ). Ketiganya terkumpul dalam kata نُوحِيهَا (QS. Hud: 49).
+- Huruf mad: alif didahului fathah (قَالَ), wau sukun didahului dhammah (يَقُولُ), ya sukun didahului kasrah (قِيلَ). Ketiganya terkumpul dalam kata نُوحِيهَا (QS. Hud: 49).
 - Panjang mad thabi'i: dua harakat.
 - Hamzah keluar dari pangkal tenggorokan (Al-Halq). Wau berharakat keluar dari dua bibir, ya berharakat dari tengah lidah.
